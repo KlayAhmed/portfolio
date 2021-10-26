@@ -10,10 +10,11 @@
   height: 100vh;
 
   .sections {
+    // glassmorphism
+
     width: 100%;
     // to calculate the top bar from the sections
     height: calc(100vh - 70px);
-    background-color: cornflowerblue;
     position: relative;
     top: 70px;
     scroll-behavior: smooth;

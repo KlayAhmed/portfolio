@@ -4,6 +4,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import Works from "./components/works/Works";
 import "./app.scss";
+//* import {} from "@material-ui/icons" for icons
 
 function App() {
   return (
