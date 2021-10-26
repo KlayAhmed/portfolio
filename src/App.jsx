@@ -4,12 +4,14 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import Works from "./components/works/Works";
 import "./app.scss";
+import { useState } from "react";
 //* import {} from "@material-ui/icons" for icons
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-      <Topbar />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
         <Portfolio />
