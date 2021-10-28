@@ -1,5 +1,6 @@
 @import "../../global.scss";
 
+// background color for the entire section
 .intro {
   background-color: #4158d0;
   background-image: linear-gradient(
@@ -8,4 +9,86 @@
     #c850c0 46%,
     #ffcc70 100%
   );
+
+  // everything is built in the glassmorphism effect
+  .glass {
+    display: flex;
+
+    // the left part of the glass container has .3 of the entire container where only my image is the object in it
+    .left {
+      flex: 0.3;
+      overflow: hidden;
+
+      // the container that has the image
+      .imgContainer {
+        width: 650px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // styling the image so it looks good
+        img {
+          height: 80%;
+          width: 63%;
+          border-radius: 3em;
+          margin-right: 70px;
+          margin-bottom: 30px;
+
+          box-shadow: 10px 10px 10px rgba($color: #2c364d, $alpha: 0.3);
+        }
+      }
+    }
+
+    // right side of the glass container has .7 of the entire container
+    .right {
+      flex: 0.7;
+      overflow: hidden;
+      position: relative;
+
+      // the wrapper for the text
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // the text itself
+        h1 {
+          font-size: 60px;
+          margin: 14px 0 24px 0;
+        }
+        h2 {
+          font-size: 40px;
+        }
+
+        // h3 has the ityped effect
+        h3 {
+          font-size: 35px;
+          span {
+            margin-top: 10px;
+            font-size: inherit;
+            color: $typingColor;
+          }
+
+          // the actual effect settings
+          .ityped-cursor {
+            animation: blink 1s infinite;
+          }
+
+          // making the ityped-cursor more realistic
+          @keyframes blink {
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
