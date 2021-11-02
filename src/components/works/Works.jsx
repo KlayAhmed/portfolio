@@ -4,7 +4,7 @@ import "./works.scss";
 export default function Works() {
   return (
     <div className="works" id="works">
-      <div className="container"></div>
+      <div className="glass"></div>
     </div>
   );
 }

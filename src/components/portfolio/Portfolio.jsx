@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./portfolio.scss";
 import Kitten from "../../assets/kitten.jpg";
 import List from "../portfolioList/List";
+import {
+  featuredPortfolio,
+  htmlPortfolio,
+  javascriptPortfolio,
+  webPortfolio,
+} from "../../data";
 
 export default function Portfolio() {
   const list = [
@@ -13,6 +19,29 @@ export default function Portfolio() {
   ];
 
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      case "web":
+        setData(webPortfolio);
+        break;
+      case "html":
+        setData(htmlPortfolio);
+        break;
+      case "javascript":
+        setData(javascriptPortfolio);
+        break;
+      case "api":
+        setData(javascriptPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
@@ -30,30 +59,12 @@ export default function Portfolio() {
             ))}
           </ul>
           <div className="wrapper-portfolio">
-            <div className="item">
-              <img src={Kitten} height={100} width={100} alt="" />
-              <h3>Web App</h3>
-            </div>
-            <div className="item">
-              <img src={Kitten} height={100} width={100} alt="" />
-              <h3>To do List</h3>
-            </div>
-            <div className="item">
-              <img src={Kitten} height={100} width={100} alt="" />
-              <h3>HTML/CSS</h3>
-            </div>
-            <div className="item">
-              <img src={Kitten} height={100} width={100} alt="" />
-              <h3>Stock Screener</h3>
-            </div>
-            <div className="item">
-              <img src={Kitten} height={100} width={100} alt="" />
-              <h3>Crypto Tracker</h3>
-            </div>
-            <div className="item">
-              <img src={Kitten} height={100} width={100} alt="" />
-              <h3>test</h3>
-            </div>
+            {data.map((d) => (
+              <div className="item">
+                <img src={Kitten} height={100} width={100} alt="" />
+                <h3>{d.title}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </div>
