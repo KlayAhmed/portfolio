@@ -14,6 +14,11 @@
   .glass {
     display: flex;
 
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     // the left part of the glass container has .3 of the entire container where only my image is the object in it
     .left {
       flex: 0.3;

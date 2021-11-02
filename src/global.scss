@@ -21,3 +21,11 @@ $typingColor: #f7f7f9;
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba($color: #2c364d, $alpha: 0.1);
 }
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
