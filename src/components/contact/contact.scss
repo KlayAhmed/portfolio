@@ -16,44 +16,42 @@
     height: 100%;
     flex-direction: row;
 
-    @include mobile{
-      flex-direction: column
+    @include mobile {
+      flex-direction: column;
     }
-    
 
-    .left{
+    .left {
       flex: 1;
       position: relative;
       left: 90px;
 
-      @include mobile{
+      @include mobile {
         left: 0;
+        right: 0;
       }
-      
 
-      .img{
+      .img {
         overflow: hidden;
-        
-        
-         @include mobile{
-           transform: scale(0.8);
-           height: 200px;
-           width: 150px
-         }
+
+        @include mobile {
+          transform: scale(0.8);
+          height: 200px;
+          width: 150px;
+        }
       }
     }
-    .right{
+    .right {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      h2{
+      h2 {
         font-size: 35px;
       }
 
-      form{
+      form {
         width: 70%;
         height: 70%;
         display: flex;
@@ -61,30 +59,29 @@
         align-items: center;
         justify-content: space-around;
 
-        input{
+        input {
           width: 300px;
           height: 30px;
           font-size: 14px;
 
-          @include mobile{
+          @include mobile {
             width: 200px;
             height: 20px;
           }
         }
 
-        textarea{
+        textarea {
           width: 300px;
           height: 200px;
           font-size: 14px;
-          @include mobile{
+          @include mobile {
             width: 200px;
             height: 100px;
           }
-
         }
 
-        button{
-          width:150px;
+        button {
+          width: 150px;
           height: 30px;
           color: white;
           background-color: purple;
@@ -94,9 +91,8 @@
           cursor: pointer;
         }
 
-        span{
+        span {
           color: #24ff24;
-
         }
       }
     }
