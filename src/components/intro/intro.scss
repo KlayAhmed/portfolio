@@ -18,29 +18,41 @@
       flex-direction: column;
       align-items: center;
     }
-
     // the left part of the glass container has .3 of the entire container where only my image is the object in it
     .left {
       flex: 0.3;
       overflow: hidden;
+      @include mobile {
+        flex: 0.5;
+      }
 
       // the container that has the image
       .imgContainer {
-        width: 650px;
-        height: 800px;
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        @include mobile {
+          align-items: start;
+          padding-top: 30px;
+        }
+
         // styling the image so it looks good
         img {
           height: 80%;
-          width: 63%;
+          width: 60%;
           border-radius: 3em;
-          margin-right: 70px;
-          margin-bottom: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-          box-shadow: 10px 10px 10px rgba($color: #2c364d, $alpha: 0.3);
+          box-shadow: 5px 5px 5px rgba($color: #2c364d, $alpha: 0.3);
+          @include mobile {
+            height: 85%;
+            width: 47%;
+          }
         }
       }
     }
@@ -51,6 +63,10 @@
       overflow: hidden;
       position: relative;
 
+      @include mobile {
+        flex: 0.5;
+      }
+
       // the wrapper for the text
       .wrapper {
         width: 100%;
@@ -60,10 +76,18 @@
         justify-content: center;
         align-items: center;
 
+        @include mobile {
+          padding-left: 0;
+        }
+
         // the text itself
         h1 {
           font-size: 60px;
           margin: 14px 0 24px 0;
+
+          @include mobile {
+            font-size: 40px;
+          }
         }
         h2 {
           font-size: 40px;
@@ -72,6 +96,10 @@
         // h3 has the ityped effect
         h3 {
           font-size: 35px;
+
+          @include mobile {
+            font-size: 25px;
+          }
           span {
             margin-top: 10px;
             font-size: inherit;

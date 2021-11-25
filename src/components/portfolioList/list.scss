@@ -3,9 +3,11 @@
 .list {
   font-size: 16px;
   margin-right: 50px;
-  padding: 7px;
+  padding: 8px;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 
   &.active {
     background-color: $introColor;

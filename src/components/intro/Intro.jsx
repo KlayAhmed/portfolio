@@ -20,7 +20,7 @@ export default function Intro() {
       <div className="glass">
         <div className="left">
           <div className="imgContainer">
-            <img src={Pic} height={700} width={600} alt="" />
+            <img src={Pic} height={1} width={1} alt="" />
           </div>
         </div>
         <div className="right">

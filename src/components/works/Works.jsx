@@ -10,44 +10,32 @@ export default function Works() {
     {
       id: "1",
       title: "Google Data Analytics",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
+      desc: "The Google Data Analytics course taught me how to work with stakeholders, And provide them with the most usefull information",
       link: "https://www.credly.com/badges/15ae0689-8e96-4b8f-a05f-6654b8aa082a?source=linked_in_profile",
     },
     {
       id: "2",
       title: "IBM Data Analytics",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
+      desc: "The IBM Data Analytics taught me how to use the most frequently used tools and methods that a Data Analyst uses",
       link: "https://www.coursera.org/account/accomplishments/verify/793JZKPRKBQQ",
     },
     {
       id: "3",
-      title: "IBM Applied AI",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
-      link: "",
+      title: "Databases and SQL for Data Science",
+      desc: "I learned how to utilize SQL with databases, And the different types of databases you encounter in the field",
+      link: "https://www.credly.com/badges/47219f22-9469-4720-8b74-31a5d796ec86?source=linked_in_profile",
     },
     {
       id: "4",
-      title: "Python 3 Programming",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
-      link: "",
+      title: "Python for Data Science, AI & Development",
+      desc: "This course taught me a great deal about how to use python, And a few of it's wonderful libraries.",
+      link: "https://www.coursera.org/account/accomplishments/verify/RJ2ASYNYCWEA",
     },
     {
       id: "5",
-      title: "Python for Data Science, AI & Development",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
-      link: "",
-    },
-    {
-      id: "6",
       title: "Web Application Development: Basic Concepts",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
-      link: "",
-    },
-    {
-      id: "7",
-      title: "Web Application Development: Basic Concepts",
-      desc: "The Google Data Analytics course taught me how to manage and maintain data sets and how to analyze them",
-      link: "",
+      desc: "Building web apps with this course was very eye opening, Using Javascript, Ruby on Rails, And MySQL to build it was interesting.",
+      link: "https://www.coursera.org/account/accomplishments/verify/MW5KQFBB65WD",
     },
   ];
 
@@ -64,7 +52,8 @@ export default function Works() {
           <h1 className="page-title">Certificates</h1>
           <div
             className="slider"
-            style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+            style={{ transform: `translateX(-${currentSlide * 100}vw)` 
+            }}
           >
             {data.map((d) => (
               <div className="slider-container">

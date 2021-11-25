@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./portfolio.scss";
-import Kitten from "../../assets/kitten.jpg";
+
 import List from "../portfolioList/List";
 import {
-  featuredPortfolio,
   htmlPortfolio,
   javascriptPortfolio,
   webPortfolio,
@@ -11,11 +10,9 @@ import {
 
 export default function Portfolio() {
   const list = [
-    { id: "featured", title: "Featured" },
     { id: "web", title: "Web App" },
     { id: "html", title: "HTML/CSS" },
     { id: "javascript", title: "Javascript" },
-    { id: "api", title: "API" },
   ];
 
   const [selected, setSelected] = useState("featured");
@@ -23,9 +20,6 @@ export default function Portfolio() {
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
       case "web":
         setData(webPortfolio);
         break;
@@ -35,11 +29,8 @@ export default function Portfolio() {
       case "javascript":
         setData(javascriptPortfolio);
         break;
-      case "api":
-        setData(javascriptPortfolio);
-        break;
       default:
-        setData(featuredPortfolio);
+        setData(webPortfolio);
     }
   }, [selected]);
 
@@ -60,10 +51,13 @@ export default function Portfolio() {
           </ul>
           <div className="wrapper-portfolio">
             {data.map((d) => (
+                <a href={d.link} target="_blank">
+                      
               <div className="item">
-                <img src={Kitten} height={100} width={100} alt="" />
+                <img src={d.img} alt=""/>
                 <h3>{d.title}</h3>
               </div>
+                    </a>
             ))}
           </div>
         </div>
