@@ -10,19 +10,19 @@ export default function Works() {
     {
       id: "1",
       title: "Google Data Analytics",
-      desc: "The Google Data Analytics course taught me how to work with stakeholders, And provide them with the most usefull information",
+      desc: "The Google Data Analytics course taught me how to work with stakeholders, And provide them with the most useful information.",
       link: "https://www.credly.com/badges/15ae0689-8e96-4b8f-a05f-6654b8aa082a?source=linked_in_profile",
     },
     {
       id: "2",
       title: "IBM Data Analytics",
-      desc: "The IBM Data Analytics taught me how to use the most frequently used tools and methods that a Data Analyst uses",
+      desc: "The IBM Data Analytics taught me how to use the most frequently used tools and methods that a Data Analyst uses.",
       link: "https://www.coursera.org/account/accomplishments/verify/793JZKPRKBQQ",
     },
     {
       id: "3",
       title: "Databases and SQL for Data Science",
-      desc: "I learned how to utilize SQL with databases, And the different types of databases you encounter in the field",
+      desc: "I learned how to utilize SQL with databases, And the different types of databases you encounter in the field.",
       link: "https://www.credly.com/badges/47219f22-9469-4720-8b74-31a5d796ec86?source=linked_in_profile",
     },
     {
@@ -52,8 +52,7 @@ export default function Works() {
           <h1 className="page-title">Certificates</h1>
           <div
             className="slider"
-            style={{ transform: `translateX(-${currentSlide * 100}vw)` 
-            }}
+            style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
           >
             {data.map((d) => (
               <div className="slider-container">
