@@ -1,4 +1,3 @@
-import { Button } from "@material-ui/core";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import React, { useState } from "react";
 import "./works.scss";
@@ -64,7 +63,7 @@ export default function Works() {
                     </div>
                   </div>
                   <div className="right">
-                    <a href={d.link} target="_blank">
+                    <a target="_blank" rel="noopener noreferrer" href={d.link}>
                       Click here to verify
                     </a>
                   </div>

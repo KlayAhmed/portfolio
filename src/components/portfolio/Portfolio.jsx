@@ -51,8 +51,8 @@ export default function Portfolio() {
           </ul>
           <div className="wrapper-portfolio">
             {data.map((d) => (
-                <a href={d.link} target="_blank">
-                      
+               <a target="_blank" rel="noopener noreferrer" href={d.link}>
+              
               <div className="item">
                 <img src={d.img} alt=""/>
                 <h3>{d.title}</h3>

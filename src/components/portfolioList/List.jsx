@@ -1,10 +1,6 @@
 import React from "react";
 import "./list.scss";
-import {
-  webPortfolio,
-  htmlPortfolio,
-  javascriptPortfolio,
-} from "../../data";
+
 
 export default function List({ title, active, setSelected, id, }) {
   return (
