@@ -15,7 +15,7 @@ export default function Works() {
     {
       id: "2",
       title: "IBM Data Analytics",
-      desc: "The IBM Data Analytics taught me how to use the most frequently used tools and methods that a Data Analyst uses.",
+      desc: "The IBM Data Analytics course taught me how to use the most frequently used tools and methods that a Data Analyst uses.",
       link: "https://www.coursera.org/account/accomplishments/verify/793JZKPRKBQQ",
     },
     {

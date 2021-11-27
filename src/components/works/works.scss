@@ -13,7 +13,9 @@
   position: relative;
   overflow-y: hidden;
 
-  
+  @include mobile {
+    justify-content: unset;
+  }
 
   .arrow {
     position: absolute;
@@ -23,23 +25,16 @@
 
     @include mobile {
       padding-top: 140px;
-      
-      
       overflow: hidden;
-      
-     
     }
 
     &.left {
       left: 300px;
       bottom: center;
-      
 
-      @include mobile{
+      @include mobile {
         left: 100px;
-        
-        
-        
+        bottom: 220px;
       }
     }
 
@@ -47,14 +42,20 @@
       right: 200px;
       bottom: center;
 
-      @include mobile{
+      @include mobile {
         right: 60px;
+        bottom: 220px;
       }
     }
   }
 
   .page-title {
     margin-bottom: 400px;
+    display: flex;
+
+    @include mobile {
+      margin-left: 95px;
+    }
   }
 
   .slider {
@@ -65,15 +66,12 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
-    
 
-
-    @include mobile{
+    @include mobile {
       width: 2600px;
       space-between: 10px;
       right: 80px;
-      
-      
+      justify-content: unset;
     }
 
     .slider-container {
@@ -83,28 +81,25 @@
       align-items: center;
       justify-content: center;
 
-      @include mobile{
+      @include mobile {
         left: 5px;
-        margin-left: 1px
+        margin-left: 1px;
       }
 
       .item {
         width: 700px;
         height: 80%;
-        background: white;
+        border: solid 3px black;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        box-shadow: 5px 5px 5px rgba($color: #2c364d, $alpha: 0.3);
 
-        @include mobile{
+        @include mobile {
           width: 300px;
           flex-direction: column;
-          
-          
         }
-
-        
 
         .left {
           flex: 8;
@@ -125,18 +120,18 @@
             h2 {
               font-size: 28px;
 
-              @include mobile{
-                font-size: 25px;
+              @include mobile {
+                font-size: 20px;
                 overflow: hidden;
               }
             }
- 
+
             p {
               font-size: 20px;
 
-              @include mobile{
+              @include mobile {
                 font-size: 15px;
-                overflow:hidden;
+                overflow: hidden;
               }
             }
           }
@@ -151,10 +146,27 @@
 
           a {
             text-decoration: none;
-            background-color: rgba($color: blue, $alpha: 0.6);
+            width: 180px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: solid 1px black;
             color: inherit;
             border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba($color: #2c364d, $alpha: 0.3);
+            text-align: center;
+
+            &:hover {
+              background-color: rgb(255, 72, 0);
+              color: white;
+              transition: all 0.6s ease;
+            }
+
+            @include mobile {
+              height: 70px;
+              width: 100px;
+            }
           }
         }
       }
