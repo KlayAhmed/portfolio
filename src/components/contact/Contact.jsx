@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.scss";
-import chat from "../../assets/chat.jpg";
+import resumeImg from "../../assets/resume.png";
 import { useState } from "react";
 import dataResume from "../../assets/dataResume.pdf";
 import devResume from "../../assets/devResume.pdf";
@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="glass">
         <div className="container">
           <div className="left">
-            <img src={chat} alt="error" className="photo" />
+            <img src={resumeImg} alt="error" className="photo" />
           </div>
           <div className="right">
             <h2>Download my resume</h2>

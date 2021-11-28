@@ -63,9 +63,11 @@ export default function Works() {
                     </div>
                   </div>
                   <div className="right">
+                  <div className="button-container">
                     <a target="_blank" rel="noopener noreferrer" href={d.link}>
                       Click here to verify
                     </a>
+                    </div>
                   </div>
                 </div>
               </div>

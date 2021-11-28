@@ -2,7 +2,7 @@ import React from "react";
 import "./list.scss";
 
 
-export default function List({ title, active, setSelected, id, }) {
+export default function List({ title, active, setSelected, id }) {
   return (
     <li
       className={active ? "list active" : "list"}

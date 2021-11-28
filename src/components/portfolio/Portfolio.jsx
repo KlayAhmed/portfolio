@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./portfolio.scss";
 
+
+
 import List from "../portfolioList/List";
 import {
   htmlPortfolio,
@@ -12,10 +14,10 @@ export default function Portfolio() {
   const list = [
     { id: "web", title: "Web App" },
     { id: "html", title: "HTML/CSS" },
-    { id: "javascript", title: "Javascript" },
+    { id: "javascript", title: "Javascript"},
   ];
 
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -46,18 +48,19 @@ export default function Portfolio() {
                 active={selected === item.id}
                 setSelected={setSelected}
                 id={item.id}
+                
               />
             ))}
           </ul>
           <div className="wrapper-portfolio">
             {data.map((d) => (
-               <a target="_blank" rel="noopener noreferrer" href={d.link}>
               
+               <a target="_blank" rel="noopener noreferrer" href={d.link}>
               <div className="item">
-                <img src={d.img} alt=""/>
+                <img src={d.img} alt="error"/>
                 <h3>{d.title}</h3>
               </div>
-                    </a>
+              </a>
             ))}
           </div>
         </div>
