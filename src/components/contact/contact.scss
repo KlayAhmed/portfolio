@@ -23,7 +23,7 @@
     .left {
       flex: 1;
       position: relative;
-      left: 90px;
+      left: 200px;
 
       @include mobile {
         left: 0;
@@ -101,11 +101,10 @@
         font-weight: 500;
         cursor: pointer;
         transition: 0.5s;
-        
 
-        @include mobile{
+        @include mobile {
           box-shadow: 2px 2px 2px rgba($color: #2c364d, $alpha: 0.5),
-                 inset 1px 1px 1px rgba($color: #2c364d, $alpha: 0.5);
+            inset 1px 1px 1px rgba($color: #2c364d, $alpha: 0.5);
         }
 
         &:hover {
