@@ -56,6 +56,7 @@ export default function Works() {
             {data.map((d) => (
               <div className="slider-container">
                 <div className="item">
+                  
                   <div className="left">
                     <div className="left-container">
                       <h2>{d.title}</h2>
@@ -65,10 +66,11 @@ export default function Works() {
                   <div className="right">
                   <div className="button-container">
                     <a target="_blank" rel="noopener noreferrer" href={d.link}>
-                      Click here to verify
+                      View
                     </a>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             ))}

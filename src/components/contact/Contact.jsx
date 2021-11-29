@@ -23,7 +23,7 @@ export default function Contact() {
           <div className="right">
             <h2>Download my resume</h2>
             <form onSubmit={handleSubmit}>
-              <button type="submit" href>
+              <button type="submit">
                 <a
                   download="Klay Ahmed Data Analyst resume.pdf"
                   href={dataResume}
