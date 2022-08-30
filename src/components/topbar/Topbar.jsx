@@ -1,6 +1,9 @@
 import React from "react";
 import "./topbar.scss";
-import { Code } from "@material-ui/icons";
+import { Code, WorkOutline } from "@material-ui/icons";
+import linkedinIcon from "./../../assets/linkedin.png";
+//import { LinkedInIcon, CodeIcon } from "@mui/icons-material/LinkedIn";
+//import linkedin from "../assets/linkedin.png";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -12,8 +15,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Klay Ahmed
           </a>
-
-          <a href="https://www.linkedin.com/in/klayahmed/" class="linkedin"></a>
         </div>
         <div className="right-menu">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

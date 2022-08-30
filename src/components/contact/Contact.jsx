@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.scss";
-import resumeImg from "../../assets/resume.png";
+import resumeImg from "../../assets/connect.svg";
 import { useState } from "react";
-import dataResume from "../../assets/dataResume.pdf";
+import { Phone } from "@material-ui/icons";
 import devResume from "../../assets/devResume.pdf";
 
 export default function Contact() {
@@ -21,15 +21,15 @@ export default function Contact() {
             <img src={resumeImg} alt="error" className="photo" />
           </div>
           <div className="right">
-            <h2>Download my resume</h2>
+            <h2>Contact</h2>
             <form onSubmit={handleSubmit}>
               <button type="submit">
                 <a
                   download="Klay Ahmed Data Analyst resume.pdf"
-                  href={dataResume}
-                  title="Klay Ahmed Data Analyst resume"
+                  href="https://www.linkedin.com/in/klayahmed/"
+                  target="_blank"
                 >
-                  Data Analyst
+                  Linkedin
                 </a>
               </button>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                   href={devResume}
                   title="Klay Ahmed Full-stack Developer resume"
                 >
-                  Full stack Developer
+                  Resume
                 </a>
               </button>
             </form>
