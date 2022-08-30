@@ -27,6 +27,7 @@ export default function Contact() {
                   download="Klay Ahmed Data Analyst resume.pdf"
                   href="https://www.linkedin.com/in/klayahmed/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Linkedin
                 </a>
