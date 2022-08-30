@@ -2,7 +2,6 @@ import React from "react";
 import "./contact.scss";
 import resumeImg from "../../assets/connect.svg";
 import { useState } from "react";
-import { Phone } from "@material-ui/icons";
 import devResume from "../../assets/devResume.pdf";
 
 export default function Contact() {

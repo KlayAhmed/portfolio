@@ -1,9 +1,6 @@
 import React from "react";
 import "./topbar.scss";
-import { Code, WorkOutline } from "@material-ui/icons";
-import linkedinIcon from "./../../assets/linkedin.png";
-//import { LinkedInIcon, CodeIcon } from "@mui/icons-material/LinkedIn";
-//import linkedin from "../assets/linkedin.png";
+import { Code } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
