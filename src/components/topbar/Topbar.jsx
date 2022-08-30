@@ -12,6 +12,8 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Klay Ahmed
           </a>
+
+          <a href="https://www.linkedin.com/in/klayahmed/" class="linkedin"></a>
         </div>
         <div className="right-menu">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
