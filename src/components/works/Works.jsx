@@ -15,7 +15,7 @@ export default function Works() {
     {
       id: "2",
       title: "IBM Data Analytics",
-      desc: "The IBM Data Analytics course taught me how to use the most frequently used tools and methods that a Data Analyst uses.",
+      desc: "The IBM Data Analytics course taught me how to use the most frequently used tools, And methods that a Data Analyst uses.",
       link: "https://www.coursera.org/account/accomplishments/verify/793JZKPRKBQQ",
     },
     {
@@ -56,7 +56,6 @@ export default function Works() {
             {data.map((d) => (
               <div className="slider-container">
                 <div className="item">
-                  
                   <div className="left">
                     <div className="left-container">
                       <h2>{d.title}</h2>
@@ -64,13 +63,16 @@ export default function Works() {
                     </div>
                   </div>
                   <div className="right">
-                  <div className="button-container">
-                    <a target="_blank" rel="noopener noreferrer" href={d.link}>
-                      View
-                    </a>
+                    <div className="button-container">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={d.link}
+                      >
+                        View
+                      </a>
                     </div>
                   </div>
-                  
                 </div>
               </div>
             ))}
